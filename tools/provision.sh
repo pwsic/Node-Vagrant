@@ -42,13 +42,13 @@ sudo apt-get -y install mysql-server mysql-client
 echo "[vagrant provisioning] Installing nodejs..."
 sudo apt-get -y install nodejs
 
+# Update packages
+echo "[vagrant provisioning] Updating packages"
+sudo apt-get update
+
 # Npm
 echo "[vagrant provisioning] Installing Npm"
 sudo apt-get -y install npm
-
-# NVM
-echo "[vagrant provisioning] Installing NVM"
-sudo wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
 
 # MongoDB
 echo "[vagrant provisioning] Processing MongoDB"
